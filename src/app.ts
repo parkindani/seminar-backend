@@ -12,8 +12,8 @@ app.get('/', (req, res, next) => {
 
 app.get('/api/article', (req, res, next) => {
   const boards: Board[] = [
-    {id: 141, content: '첫 번째 게시글 입니asdf다.'},
-    {id: 145, content: '두 번째 게시글 입니다.'}
+    {id: 141, content: '첫 번째 게시글 입니asdf다.', created_at: new Date()},
+    {id: 145, content: '두 번째 게시글 입니다.', created_at: new Date()}
   ]
   res.send(boards);
 });
