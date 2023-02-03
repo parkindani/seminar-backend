@@ -1,5 +1,5 @@
 import express from  'express';
-import Board from './@core/types/types';
+import { Board } from './@core/types/types';
 
 const app = express();
 
